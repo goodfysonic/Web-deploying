@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Murach's Java Servlet and JSP</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <img src="murach.jpg" alt="murach.com" />
+    <h1>Survey</h1>
+    <p>
+      If you have a moment, we'd appreciate it if you would fill out this survey
+    </p>
+    <h2>Your Information</h2>
+
+    <form action="emailList" method="post">
+      <input type="hidden" name="action" value="add" />
+
+      <label>First name:</label>
+      <input type="text" name="firstName" required /><br />
+
+      <label>Last name:</label>
+      <input type="text" name="lastName" required /><br />
+
+      <label>Email:</label>
+      <input type="email" name="email" required /><br />
+
+      <label>Date of birth:</label>
+      <input type="date" name="dateOfBirth" required /><br />
+
+      <h3>How did you hear about us?</h3>
+      <input type="radio" id="search_engine" name="how" value="Search engine" />
+      Search engine
+      <input type="radio" id="word_of_mouth" name="how" value="Word of mouth" />
+      Word of mouth
+      <input type="radio" id="social_media" name="how" value="Social media" />
+      Social media
+      <input type="radio" id="other" name="how" value="Other" /> Other
+
+      <h3>
+        Would you like to receive announcements about new CDs and special offers
+      </h3>
+      <input type="checkbox" id="yes1" name="yes" value="Yes, I'd like that" />
+      Yes, I'd like that <br />
+      <input
+        type="checkbox"
+        id="yes2"
+        name="yes"
+        value="Yes, please send me email announcement"
+      />
+      Yes, please send me email announcement <br />
+      <p>
+        <label for="contact">Please contact me by:</label>
+
+        <select name="contact" id="contact">
+          <option value="phone">Phone number</option>
+          <option value="email">Email</option>
+        </select>
+      </p>
+      
+      <label>&nbsp;</label>
+		<input type="submit" value="Submit" id="submit">
+    </form>
+
+  </body>
+</html>

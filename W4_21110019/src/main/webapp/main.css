@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 13pt;
+	margin-left: 2em;
+	margin-right: 2em;
+	
+}
+
+img {
+  display: block;
+}
+
+h1 {
+	color: black;
+}
+
+h2 {
+	color: black;
+}
+
+h3 {
+	color: black;
+}
+
+
+label {
+	float: left;
+	width: 6em;
+	margin-bottom: 0.5em;
+}
+
+input[type="text"], input[type="email"]	{
+	width: 15em;
+	margin-left: 2em;
+	margin-bottom: 2em;
+}
+
+br	{
+	clear: both;
+}
+#submit {
+	margin-left: 0.5em;
+}
